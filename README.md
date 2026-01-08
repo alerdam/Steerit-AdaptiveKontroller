@@ -1,4 +1,4 @@
-# Steerit: A Modular Neural-Adaptive Control Framework
+# Steerit: Adaptive Kontroller
 
 **Steerit** is a modular and general-purpose inference system designed to capture motion dynamics from monitored sources and convert them into stable control signals. The architecture integrates machine learning predictions with a **PID controller** to enhance the adaptive capabilities of traditional control approaches.
 
