@@ -1,6 +1,6 @@
 # Steerit: Adaptive Kontroller
 
-This study introduces Invisible Steering, a modular rotational command engine that generates real-time steering values by processing camera-based hand gestures. By interpreting gestures that mimic the physical act of steering, the system translates human intent through spatial dynamics, converting hand-position gestures into stable control signals.
+Steerit is a modular rotational command engine that generates real-time steering values by processing camera-based hand gestures. By interpreting hand gestures as they mimic the physical act of steering, the system translates human intent through spatial dynamics, converting hand-position gestures into stable control signals.
 
 Instead of simply following coordinates, the architecture identifies specific spatial states and translates them into reflexive responses, mapping user movement patterns directly to the dynamic requirements of the task.
 
