@@ -1,7 +1,8 @@
 # Steerit: Adaptive Kontroller
 
-**Steerit** is a modular and general-purpose inference system designed to capture motion dynamics from monitored sources and convert them into stable control signals. The architecture integrates machine learning predictions with a **PID controller** to enhance the adaptive capabilities of traditional control approaches.
+This study introduces Invisible Steering, a modular rotational command engine that generates real-time steering values by processing camera-based hand gestures. By interpreting gestures that mimic the physical act of steering, the system translates human intent through spatial dynamics, converting hand-position gestures into stable control signals.
 
+Instead of simply following coordinates, the architecture identifies specific spatial states and translates them into reflexive responses, mapping user movement patterns directly to the dynamic requirements of the task.
 
 
 ## 🧠 Abstract & Core Research
