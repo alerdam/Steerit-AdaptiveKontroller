@@ -7,7 +7,7 @@ Instead of simply following coordinates, the architecture identifies specific sp
 
 ## 🧠 Abstract & Core Research
 
-The core research focuses on integrating unique temporal and spatial signatures—specifically "motion patterns"—into control stability. Steerit investigates a **PID Tuning Neural Network** that dynamically modulates proportional ($K_p$) and derivative ($K_d$) gains. 
+The core research focuses on integrating unique temporal and spatial signatures—specifically "motion patterns"—into control stability. Steerit investigates a **Machine Learning-Based PID Tuning Model** that dynamically modulates proportional ($K_p$) and derivative ($K_d$) gains. 
 
 Unlike fixed controllers, this model utilizes an expanded input feature set: in addition to standard error ($e$) and derivative of error ($\Delta e$), the system incorporates **spatial displacement features**, such as vertical hand coordinate differences ($y\_diff$). This multi-dimensional input allows the PID controller to exhibit richer, situation-appropriate adaptive behavior.
 
@@ -28,7 +28,7 @@ The prediction engine processes an 8-dimensional feature vector derived from rel
 
 ## 🏗 Methodologies
 
-### 1. Neural-Adaptive PID Tuning
+### 1. Machine Learning-Adaptive PID Tuning
 The system uses a dedicated **TFLite PID Adjuster** to optimize control parameters in real-time.
 * **Teacher-Based Learning**: The model is trained using a **Ziegler–Nichols (ZN)** heuristic function to calculate ideal $\Delta K_p$ and $\Delta K_d$ values based on error dynamics.
 * **Dynamic Modulation**: Real-time adjustment of $K_p$ and $K_d$ gains based on a 3-feature input: $[e, \Delta e, y\_diff]$.
@@ -41,8 +41,8 @@ To handle sensor noise and detection gaps (e.g., MediaPipe landmark flickering),
 
 
 
-### 3. Deep Learning Architecture
-The framework employs two primary neural networks:
+### 3. Machine Learning Architecture
+The framework employs two primary machine learning models:
 * **Angle Predictor (`MoDeL_Angle.py`)**: A multi-layer perceptron (MLP) with mixed `tanh` and `sigmoid` activations designed to map 8 geometric features to a steering angle.
 * **PID Adjuster (`MoDeL_PIDAdaptive.py`)**: A high-speed MLP utilizing `tanh` activations for smooth, continuous gain modulation between $[-1, 1]$.
 
